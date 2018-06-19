@@ -10,6 +10,7 @@
 		BD672F7A20D8986400D65A4F /* swiftcommons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD672F7020D8986400D65A4F /* swiftcommons.framework */; };
 		BD672F7F20D8986400D65A4F /* swiftcommonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD672F7E20D8986400D65A4F /* swiftcommonsTests.swift */; };
 		BD672F8120D8986400D65A4F /* swiftcommons.h in Headers */ = {isa = PBXBuildFile; fileRef = BD672F7320D8986400D65A4F /* swiftcommons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD672F8B20D8A00600D65A4F /* KeyboardNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD672F8A20D8A00600D65A4F /* KeyboardNotification.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		BD672F7920D8986400D65A4F /* swiftcommonsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftcommonsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD672F7E20D8986400D65A4F /* swiftcommonsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftcommonsTests.swift; sourceTree = "<group>"; };
 		BD672F8020D8986400D65A4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD672F8A20D8A00600D65A4F /* KeyboardNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardNotification.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				BD672F7320D8986400D65A4F /* swiftcommons.h */,
 				BD672F7420D8986400D65A4F /* Info.plist */,
+				BD672F8A20D8A00600D65A4F /* KeyboardNotification.swift */,
 			);
 			path = swiftcommons;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					BD672F6F20D8986400D65A4F = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					BD672F7820D8986400D65A4F = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD672F8B20D8A00600D65A4F /* KeyboardNotification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,7 +344,8 @@
 		BD672F8520D8986400D65A4F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
@@ -357,6 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.completionhandler.swiftcommons;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +372,7 @@
 		BD672F8620D8986400D65A4F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +399,7 @@
 		BD672F8820D8986400D65A4F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A7LGDA7RDH;
 				INFOPLIST_FILE = swiftcommonsTests/Info.plist;
@@ -409,6 +418,7 @@
 		BD672F8920D8986400D65A4F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A7LGDA7RDH;
 				INFOPLIST_FILE = swiftcommonsTests/Info.plist;
